@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\CarController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,5 +16,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('list_screen');
+});
+
+Route::get('/test', function () {
+  return view('welcome');
+});
+
+Route::middleware('web')->post('/', 'CarController@delete');
+
+Route::post('/', [CarController::class, 'delete'])->name('car.delete');
+
+//
+
+Route::post('/atividades', function () {
+  return view('api');
 });
