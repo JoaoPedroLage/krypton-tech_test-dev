@@ -24,6 +24,8 @@ por João Lage
 
 - [Abrir e rodar o projeto](#%EF%B8%8F-abrir-e-rodar-o-projeto)
 
+- [Deploy na AWS](#deploy)
+
 - [Feedback](#%EF%B8%8F-feedback)
 
 
@@ -77,6 +79,8 @@ O retorno deverá estar paginada e exibir até 5 registros por página e permiti
   * Inicialize o projeto:
    * `php artisan serve`
 
+# Deploy na AWS
+* Fiz o deploy da aplicação na AWS em uma máquina virtual Ubuntu EC2, no seguinte endereço: 'http://15.228.254.1:8000/' para a listagem de carros e para a API (método POST) 'http://15.228.254.1:8000/atividaes'.
 
 # Feedback
 
