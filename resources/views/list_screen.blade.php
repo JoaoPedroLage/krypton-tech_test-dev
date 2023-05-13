@@ -228,9 +228,9 @@
 
           // Adicionar a chave "motor" ao objeto "car"
           if (motor.observacao !== null) {
-          car.motor = `${motor.observacao}, ${motor.cilindros} Cilindros em ${motor.posicionamento_cilindros}, ${motor.litragem} Litros`;
+          car.motor = `${motor.observacao}, ${motor.cilindros} Cilindros em ${motor.posicionamento_cilindros}, Litragem de ${motor.litragem}L`;
           } else {
-          car.motor = `${motor.cilindros} Cilindros em ${motor.posicionamento_cilindros}, ${motor.litragem} Litros`;
+          car.motor = `${motor.cilindros} Cilindros em ${motor.posicionamento_cilindros}, Litragem de ${motor.litragem}L`;
           }
 
           const tr = document.createElement('tr');
@@ -289,7 +289,7 @@
         marca,
         modelo,
         cor,
-        motor: `${observacao} ${cilindros} Cilindros em ${posicionamento}, ${litragem} Litros`,
+        motor: `${observacao} ${cilindros} Cilindros em ${posicionamento}, Litragem de ${litragem} L`,
       };
 
       // Adicionar o novo carro à lista de carros
