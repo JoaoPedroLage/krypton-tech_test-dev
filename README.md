@@ -7,60 +7,78 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+# :package: Krypton BPO (tech) - Test Dev
+por João Lage
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<p align="center">
+   <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
+</p>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Tópicos
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- [Descrição do projeto](#books-descrição-do-projeto)
 
-## Learning Laravel
+- [Stacks utilizadas](#books-stacks-utilizadas)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- [Etapa mais desafiadora](#%EF%B8%8F-etapa-mais-desafiadora)
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- [Abrir e rodar o projeto](#%EF%B8%8F-abrir-e-rodar-o-projeto)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- [Feedback](#%EF%B8%8F-feedback)
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-### Premium Partners
+# :books: Descrição do Projeto
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+O projeto tem 2 tarefas requeridas:
 
-## Contributing
+Tarefa 1 :
+Consumir o endpoint GET http://apiintranet.kryptonbpo.com.br/test-dev/exercise-1 da API e construir a tela da listagem do carro com seu respectivo motor, a tela para inserir um novo carro com o seu motor e a exclusão do carro com o seu motor. O retorno é um JSON com os dados de carros e de motores que está vinculado pelo motor_id.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+* A Tela de listagem estará disponínel na rota padão na porta 'http://localhost/' ou 'http://127.0.0.1/' da sua máquina. Fora a tela de listagem na rota padrão, há a rota '/test' onde eu tentei construir a tela de listagem utilizando apenas PHP puro, sem o auxílio do JavaScript.
 
-## Code of Conduct
+Tarefa 2 :
+Criar uma API que será consultado utilizando method POST e que retorne em formato json os dados das atividades ordenado por hora.
+O retorno deverá estar paginada e exibir até 5 registros por página e permitir ao desenvolvedor que for consumir a sua API escolher qual página ele irá exibir.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+* A API que retorna em formato json os dados das atividades ordenado por hora estará disponínel na rota '/atividades' na porta 'http://localhost/' ou 'http://127.0.0.1/' da sua máquina.
+* Para acessá-la você deve fazer uma requisição do tipo POST (requisição do tipo GET não são aceitas) e enviar ou nos parâmetros da requisição ou enviar um json no body da requisição com a chave 'page' e o valor da página desejada, exemplo:
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
+![image](https://github.com/JoaoPedroLage/krypton-tech_test-dev/assets/87338925/9ea5f3e4-fbe2-43e4-a752-a614da782b43)
+![image](https://github.com/JoaoPedroLage/krypton-tech_test-dev/assets/87338925/d8160206-06bd-4383-8e51-985f0897b34e)
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+# :books: Stacks utilizadas
+
+- [PHP](https://www.php.net/)
+- [JavaScript](https://www.w3schools.com/js/)
+- [Laravel](https://laravel.com/)
+
+
+# Etapa mais desafiadora
+
+- Já possuia alguma familiaridade com PHP mas nunca tinha construído uma aplicação desse tipo, foi um grande desafio aprender tudo o que era necessário para construir as views, as rotas e usar controllers do sistema Laravel.
+- Garantir que todas as funções estão se comunicando com coerência e gerando os resultados esperados.
+
+
+# 🛠️ Abrir e rodar o projeto
+
+1. Clone o repositório
+  * `git clone git@github.com:JoaoPedroLage/krypton-tech_test-dev.git`
+  * Entre na pasta do repositório que você acabou de clonar
+
+2. Instale as dependências e inicialize
+  * Instale as dependências:
+    * `composer install`
+  * Rode os seguintes comadandos:
+    * `copy .env.example .env` e `php artisan key:generate`
+  * Inicialize o projeto:
+   * `php artisan serve`
+
+
+# Feedback
+
+* Achei estranho a escolha do método POST para retornar um json com as atividades ordenadas, semanticamente falando não seria mais correto o uso do método GET para o retorno do json, já que o uso do método POST geralmente é destinado a inserir novos dados e do GET de apenas retorná-los.
+* Tentei utilizar o axios e o fetch do JavaScript para fazer a requisição a api da listagem de carros, porém obtive erros de bloqueio da requisição e de cors.
