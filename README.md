@@ -33,7 +33,7 @@ por João Lage
 O projeto tem 2 tarefas requeridas:
 
 Tarefa 1 :
-Você deverá consumir o endpoint GET http://apiintranet.kryptonbpo.com.br/test-dev/exercise-1 da nossa API e construir a tela da listagem do carro com seu respectivo motor, a tela para inserir um novo carro com o seu motor e a exclusão do carro com o seu motor. O retorno é um JSON com os dados de carros e de motores que está vinculado pelo motor_id.
+Consumir o endpoint GET http://apiintranet.kryptonbpo.com.br/test-dev/exercise-1 da API e construir a tela da listagem do carro com seu respectivo motor, a tela para inserir um novo carro com o seu motor e a exclusão do carro com o seu motor. O retorno é um JSON com os dados de carros e de motores que está vinculado pelo motor_id.
 
 * A Tela de listagem estará disponínel na rota padão na porta 'http://localhost/' ou 'http://127.0.0.1/' da sua máquina. Fora a tela de listagem na rota padrão, há a rota '/test' onde eu tentei construir a tela de listagem utilizando apenas PHP puro, sem o auxílio do JavaScript.
 
