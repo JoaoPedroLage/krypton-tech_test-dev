@@ -43,6 +43,9 @@ O retorno deverá estar paginada e exibir até 5 registros por página e permiti
 
 * A API que retorna em formato json os dados das atividades ordenado por hora estará disponínel na rota '/atividades' na porta 'http://localhost/' ou 'http://127.0.0.1/' da sua máquina.
 * Para acessá-la você deve fazer uma requisição do tipo POST (requisição do tipo GET não são aceitas) e enviar ou nos parâmetros da requisição ou enviar um json no body da requisição com a chave 'page' e o valor da página desejada, exemplo:
+
+
+
 ![image](https://github.com/JoaoPedroLage/krypton-tech_test-dev/assets/87338925/9ea5f3e4-fbe2-43e4-a752-a614da782b43)
 ![image](https://github.com/JoaoPedroLage/krypton-tech_test-dev/assets/87338925/d8160206-06bd-4383-8e51-985f0897b34e)
 
