@@ -84,5 +84,5 @@ O retorno deverá estar paginada e exibir até 5 registros por página e permiti
 
 # Feedback
 
-* Achei estranho a escolha do método POST para retornar um json com as atividades ordenadas, semanticamente falando não seria mais correto o uso do método GET para o retorno do json, já que o uso do método POST geralmente é destinado a inserir novos dados e do GET de apenas retorná-los.
+* Acredito que haja controvérsias sobre a escolha do método POST para retornar um json com as atividades ordenadas, semanticamente falando não seria mais correto o uso do método GET para o retorno do json, já que o uso do método POST geralmente é destinado a inserir novos dados e do GET de apenas retorná-los.
 * Tentei utilizar o axios e o fetch do JavaScript para fazer a requisição a api da listagem de carros, porém obtive erros de bloqueio da requisição e de cors.
