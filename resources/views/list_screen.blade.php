@@ -289,8 +289,7 @@
         marca,
         modelo,
         cor,
-        motor: `${cilindros} Cilindros em ${posicionamento}, ${litragem} Litros`,
-        observacao,
+        motor: `${observacao} ${cilindros} Cilindros em ${posicionamento}, ${litragem} Litros`,
       };
 
       // Adicionar o novo carro à lista de carros
