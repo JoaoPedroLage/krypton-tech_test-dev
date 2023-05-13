@@ -13,7 +13,104 @@
 
   <!-- Styles -->
   <style>
+    body {
+      font-family: 'figtree', sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
 
+    h1 {
+      margin-top: 0;
+      text-align: center;
+      background-color: #D3D3D3;
+      height: 50px;
+    }
+
+    h2 {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    form {
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-around;
+      border: 1px solid;
+      height: 350px;
+      width: 800px;
+      align-self: center;
+    }
+
+    form div {
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 50px;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    form input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 5px;
+    }
+
+    button[type="submit"] {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ccc;
+    }
+
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    button {
+      padding: 5px 10px;
+      background-color: #e74c3c;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 12px;
+      cursor: pointer;
+      height: 40px;
+      margin-left: 50px;
+      align-self: end;
+    }
   </style>
 </head>
 
@@ -24,29 +121,33 @@
   <h2>Adicionar novo carro</h2>
 
   <form id="newCarForm">
-    <h3>Carro:</h3>
-    <label for="marca">Marca:</label>
-    <input type="text" name="marca" id="marca" required>
-    <br>
-    <label for="modelo">Modelo:</label>
-    <input type="text" name="modelo" id="modelo" required>
-    <br>
-    <label for="cor">Cor:</label>
-    <input type="text" name="cor" id="cor" required>
-    <br>
-    <h3>Motor:</h3>
-    <label for="posicionamento">Posicionamento Cilindros:</label>
-    <input type="text" name="posicionamento" id="posicionamento" required>
-    <br>
-    <label for="cilindros">Cilindros:</label>
-    <input type="text" name="cilindros" id="cilindros" required>
-    <br>
-    <label for="litragem">Litragem:</label>
-    <input type="text" name="litragem" id="litragem" required>
-    <br>
-    <label for="observacao">Observacao:</label>
-    <input type="text" name="observacao" id="observacao">
-    <br>
+    <div>
+      <h3>Carro:</h3>
+      <label for="marca">Marca:</label>
+      <input type="text" name="marca" id="marca" required>
+      
+      <label for="modelo">Modelo:</label>
+      <input type="text" name="modelo" id="modelo" required>
+      
+      <label for="cor">Cor:</label>
+      <input type="text" name="cor" id="cor" required>
+      
+    </div>
+    <div>
+      <h3>Motor:</h3>
+      <label for="posicionamento">Posicionamento Cilindros:</label>
+      <input type="text" name="posicionamento" id="posicionamento" required>
+      
+      <label for="cilindros">Cilindros:</label>
+      <input type="text" name="cilindros" id="cilindros" required>
+      
+      <label for="litragem">Litragem:</label>
+      <input type="text" name="litragem" id="litragem" required>
+      
+      <label for="observacao">Observacao:</label>
+      <input type="text" name="observacao" id="observacao">
+      
+    </div>
     <button type="submit">Inserir</button>
   </form>
 
