@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ActivitiesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,11 +16,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+  return $request->user();
 });
-
-// Carregar a classe do controlador
-require_once('../app/Http/Controllers/ActivitiesController.php');
 
 // Criar uma instância do controlador
 $activitiesController = new ActivitiesController();
@@ -32,14 +30,10 @@ Route::post('/atividades', function (Request $request) use ($activitiesControlle
   return view('api')->with('data', $data);
 });
 
-
-// Criar uma instância do controlador
-$activitiesController = new ActivitiesController();
-
 // Verificar o método da requisição
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+$request = Request::createFromGlobals();
+if ($request->method() === 'POST') {
   // Chamar o método index do controlador para processar a requisição POST
-  $request = Request::createFromGlobals();
   $activitiesController->index($request);
 } else {
   // Retornar um erro para requisições que não sejam POST
