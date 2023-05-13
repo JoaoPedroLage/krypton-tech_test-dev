@@ -227,7 +227,11 @@
           });
 
           // Adicionar a chave "motor" ao objeto "car"
+          if (motor.observacao !== null) {
+          car.motor = `${motor.observacao}, ${motor.cilindros} Cilindros em ${motor.posicionamento_cilindros}, ${motor.litragem} Litros`;
+          } else {
           car.motor = `${motor.cilindros} Cilindros em ${motor.posicionamento_cilindros}, ${motor.litragem} Litros`;
+          }
 
           const tr = document.createElement('tr');
           tr.innerHTML = `
