@@ -75,7 +75,7 @@ O retorno deverá estar paginada e exibir até 5 registros por página e permiti
   * Instale as dependências:
     * `composer install`
   * Rode os seguintes comadandos:
-    * `copy .env.example .env` e `php artisan key:generate`
+    * (`copy .env.example .env` (para Windows) ou `cp .env.example .env` (para Linux)) e `php artisan key:generate`
   * Inicialize o projeto:
    * `php artisan serve`
 
