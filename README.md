@@ -78,7 +78,7 @@ O retorno deverá estar paginada e exibir até 5 registros por página e permiti
     * (`copy .env.example .env` (para Windows) ou `cp .env.example .env` (para Linux))
     * `php artisan key:generate`
   * Inicialize o projeto:
-   * `php artisan serve`
+    * `php artisan serve`
 
 # Deploy na AWS
 * Fiz o deploy da aplicação na AWS em uma máquina virtual Ubuntu EC2, no seguinte endereço: 'http://15.228.254.1:8000/' para a listagem de carros e para a API (método POST) 'http://15.228.254.1:8000/atividaes'.
